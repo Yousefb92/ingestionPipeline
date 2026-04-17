@@ -57,7 +57,7 @@ except ImportError:
 _script_dir  = os.path.dirname(os.path.abspath(__file__))
 _project_dir = os.path.dirname(_script_dir)               # ingestion/
 _sibling_env = os.path.join(_project_dir, "..", "ma_agent_task", ".env")
-GEMINI_API_KEY = "AIzaSyCEIKYY02KhBkjf1-79EMY7FQPU19_98h0"
+GEMINI_API_KEY = ""
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 load_dotenv(dotenv_path=os.path.join(_project_dir, ".env"))   # ingestion/.env
